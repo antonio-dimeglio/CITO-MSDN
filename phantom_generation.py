@@ -54,9 +54,8 @@ def generate_phantoms():
 
         image[x:x+TEMPLATE_SIZE, y:y+TEMPLATE_SIZE] = template[tp] * volume
         label[x:x+TEMPLATE_SIZE, y:y+TEMPLATE_SIZE] = template[2 * (tp // 2)] * (tp + 1)
-        tp += 1
 
-        tp %= NUM_TEMPLATES
+        tp = (tp + 1) % NUM_TEMPLATES
 
         i += 1
 
