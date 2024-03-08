@@ -6,5 +6,6 @@ To  create and activate the environment required to run the code, write onto the
 command line
 
 ```{bash}
-
+conda env create -f environment.yml
+conda activate cito
 ```
